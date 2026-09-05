@@ -12,6 +12,49 @@ and isn't implemented.
 
 ---
 
+## Product Screenshots
+
+### Reconciliation Dashboard
+
+![LedgerGuard dashboard](docs/screenshots/dashboard.png)
+
+*LedgerGuard dashboard showing reconciliation KPIs, exception distribution, and settlement overview.*
+
+### Workflow in Action
+
+![Exception queue](docs/screenshots/exception-queue.png)
+
+*Exception queue showing transaction-level reconciliation discrepancies and investigation actions.*
+
+![AI investigation](docs/screenshots/ai-investigation.png)
+
+*AI-assisted exception investigation showing root cause, evidence, recommendation, confidence, and mandatory human review.*
+
+![Audit trail](docs/screenshots/audit-trail.png)
+
+*Human review and audit trail showing investigation and decision events.*
+
+> The audit trail screenshot above reflects the demo/test state from the
+> [Live AI Verification](#live-ai-verification) run (exception #84) — it is a
+> screenshot of a demo activity log, not production compliance evidence or an
+> immutable audit trail.
+
+---
+
+## Demo at a Glance
+
+```
+Reconcile → Detect Exception → Investigate with AI → Human Review → Audit
+```
+
+Every reconciliation pass matches transactions against settlements, flags
+anything that doesn't line up, lets a reviewer trigger an AI investigation for
+context, and requires an explicit human approve/reject before an exception is
+considered resolved — with each step written to the audit log. See
+[Demo Flow](#demo-flow-5-minutes) for the full walkthrough.
+
+---
+
 ## Problem
 
 Manual financial reconciliation — matching what a merchant was charged against

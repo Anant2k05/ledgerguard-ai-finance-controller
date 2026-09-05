@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&amp;family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'error': '#ffb4ab', 'secondary': '#4edea3', 'primary-fixed-dim': '#b0c6ff', 'on-tertiary': '#472a00', 'surface-container-high': '#272a32', 'inverse-on-surface': '#2d3038', 'on-surface-variant': '#c2c6d7', 'on-background': '#e1e2ec', 'tertiary': '#ffb95f', 'on-secondary': '#003824', 'surface-variant': '#32353d', 'on-surface': '#e1e2ec', 'surface-container-low': '#191b23', 'tertiary-container': '#996000', 'background': '#10131a', 'error-container': '#93000a', 'on-primary-fixed': '#001945', 'on-tertiary-fixed': '#2a1700', 'on-secondary-fixed': '#002113', 'secondary-container': '#00a572', 'secondary-fixed': '#6ffbbe', 'primary-container': '#0c66e4', 'secondary-fixed-dim': '#4edea3', 'outline-variant': '#424654', 'on-primary-fixed-variant': '#00429b', 'on-primary': '#002d6e', 'surface-dim': '#10131a', 'inverse-primary': '#0058ca', 'surface-bright': '#363941', 'tertiary-fixed-dim': '#ffb95f', 'surface-container-highest': '#32353d', 'surface-container': '#1d1f27', 'on-secondary-fixed-variant': '#005236', 'tertiary-fixed': '#ffddb8', 'on-tertiary-container': '#ffecdb', 'primary': '#b0c6ff', 'on-error-container': '#ffdad6', 'surface': '#10131a', 'outline': '#8c90a0', 'surface-container-lowest': '#0b0e15', 'surface-tint': '#b0c6ff', 'on-secondary-container': '#00311f', 'on-error': '#690005', 'on-tertiary-fixed-variant': '#653e00', 'primary-fixed': '#d9e2ff', 'inverse-surface': '#e1e2ec', 'on-primary-container': '#ecefff' }, borderRadius: { 'DEFAULT': '0.125rem', 'lg': '0.25rem', 'xl': '0.5rem', 'full': '0.75rem' }, spacing: { 'space-sm': '0.5rem', 'header-height': '3.5rem', 'space-2xs': '0.125rem', 'space-2xl': '2rem', 'table-row-height-compact': '2rem', 'space-lg': '1rem', 'space-3xl': '3rem', 'sidebar-collapsed': '4rem', 'table-row-height-default': '2.5rem', 'space-xl': '1.5rem', 'space-xs': '0.25rem', 'sidebar-expanded': '16rem', 'space-md': '0.75rem' }, fontFamily: { 'mono-data-md': ['monospace'], 'headline-xl-mobile': ['Plus Jakarta Sans'], 'mono-data-sm': ['monospace'], 'headline-sm': ['Plus Jakarta Sans'], 'body-lg': ['Hanken Grotesk'], 'label-xs': ['Hanken Grotesk'], 'headline-xl': ['Plus Jakarta Sans'], 'headline-md': ['Plus Jakarta Sans'], 'mono-metric-lg': ['monospace'], 'body-sm': ['Hanken Grotesk'], 'label-md': ['Hanken Grotesk'], 'headline-lg': ['Plus Jakarta Sans'], 'body-md': ['Hanken Grotesk'] }, fontSize: { 'mono-data-md': ['13px', { 'lineHeight': '18px', 'letterSpacing': '0', 'fontWeight': '500' }], 'headline-xl-mobile': ['26px', { 'lineHeight': '34px', 'letterSpacing': '-0.015em', 'fontWeight': '700' }], 'mono-data-sm': ['11px', { 'lineHeight': '14px', 'letterSpacing': '0.02em', 'fontWeight': '500' }], 'headline-sm': ['15px', { 'lineHeight': '20px', 'letterSpacing': '-0.005em', 'fontWeight': '600' }], 'body-lg': ['15px', { 'lineHeight': '22px', 'fontWeight': '400' }], 'label-xs': ['10px', { 'lineHeight': '12px', 'letterSpacing': '0.06em', 'fontWeight': '700' }], 'headline-xl': ['32px', { 'lineHeight': '40px', 'letterSpacing': '-0.02em', 'fontWeight': '700' }], 'headline-md': ['18px', { 'lineHeight': '24px', 'letterSpacing': '-0.01em', 'fontWeight': '600' }], 'mono-metric-lg': ['28px', { 'lineHeight': '32px', 'letterSpacing': '-0.02em', 'fontWeight': '600' }], 'body-sm': ['12px', { 'lineHeight': '16px', 'fontWeight': '400' }], 'label-md': ['12px', { 'lineHeight': '16px', 'letterSpacing': '0.03em', 'fontWeight': '600' }], 'headline-lg': ['24px', { 'lineHeight': '32px', 'letterSpacing': '-0.015em', 'fontWeight': '600' }], 'body-md': ['13px', { 'lineHeight': '18px', 'fontWeight': '400' }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_0_rgba(66,70,84,0.4)]"><div class="h-header-height w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><div class="flex items-center gap-space-md"><img alt="LEDGERGUARD Brand Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UiPe985k_J9keZzgXP0r829uU7YYXTJ0zOvW94EqsdVwklRagkSNp5mZ_iKKfw7DivXprimY6Uw8Ar5SIQLp6P2ab0yuD4JHOlcXTvQjkwTaiSXN5gzkjuEglFkAbVtGs1Qc-gcQEnq9m6s4RHdGb89apDCiNi2NPqgfldpHIHqcjjsvYaNEVh36w-5Ho7QDgnPHfQVJ4h_g37a06UPH0gwpks2KuzPmOWxC-wUxpTivIwbeKRFEzgdLg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-wider text-on-surface uppercase leading-none">LEDGERGUARD</span><span class="font-mono-data-sm text-mono-data-sm tracking-widest text-primary uppercase mt-space-2xs">AI Finance Controller</span></div></div><div class="h-5 w-px bg-outline-variant/60 hidden xl:block"></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-container text-primary font-bold shadow-[inset_0_-2px_0_0_#b0c6ff]"><a aria-current="page" class="px-space-md py-space-xs rounded-lg transition-colors bg-surface-container text-primary font-bold shadow-[inset_0_-2px_0_0_#b0c6ff]" data-path="overview" href="#">Overview</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-colors text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" data-path="transactions" href="#">Transactions</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-colors text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high flex items-center gap-space-xs" data-path="exceptions" href="#">Exceptions<span class="px-1.5 py-0.5 rounded-full bg-error-container text-error font-mono-data-sm text-mono-data-sm font-bold leading-none">—</span></a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-colors text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" data-path="investigations" href="#">Investigations</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-colors text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" data-path="audit-trail" href="#">Audit Trail</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden 2xl:flex items-center gap-space-sm px-space-md py-1 rounded bg-surface-container-low"><span class="relative flex h-2 w-2" id="system-status-dot-wrap"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75" id="system-status-ping"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary" id="system-status-dot"></span></span><span class="font-mono-data-sm text-mono-data-sm text-secondary tracking-tight" id="system-status-text">System Status: Checking…</span></div><div class="h-5 w-px bg-outline-variant/60 hidden sm:block"></div><div class="flex items-center gap-space-md pl-space-xs"><div class="flex flex-col text-right hidden md:block"><span class="font-mono-data-sm text-mono-data-sm text-on-surface leading-tight">finops_lead@ledgerguard.internal</span><div class="flex justify-end mt-space-2xs"><span class="px-1.5 py-0.25 rounded bg-primary-container text-on-primary-container font-label-xs text-label-xs font-bold uppercase tracking-wider">CONTROLLER · DEMO</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-header-height bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive View State Controller Scripts & Style Injections -->
+<style>
+    .mono-num { font-variant-numeric: tabular-nums; font-family: monospace; }
+    .custom-scrollbar::-webkit-scrollbar { display: none; }
+    .table-row-selected { background-color: rgba(12, 102, 228, 0.12) !important; position: relative; }
+    .table-row-selected::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background-color: #0c66e4; }
+  </style>
+<div class="w-full px-space-lg lg:px-space-xl py-space-lg flex flex-col gap-space-lg max-w-[1720px] mx-auto">
+<!-- 1. TOP CONTROL BAR / ACTIONS HEADER -->
+<header class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md pb-space-md border-b border-outline-variant/30">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Reconciliation Operations Console</h1>
+<div class="flex items-center gap-space-xs px-2 py-0.5 rounded-full bg-surface-container-high border border-outline-variant/40">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary font-semibold">Engine Active</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Transaction-to-settlement automated ledger verification &amp; AI-assisted discrepancy triage</p>
+</div>
+<!-- Action Cluster & View State Simulator Switcher -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="hidden sm:flex flex-col items-end mr-space-xs">
+<span class="font-mono-data-sm text-mono-data-sm text-outline" id="header-last-synced">Last synced: —</span>
+</div>
+<!-- Filter Dropdowns -->
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<select class="h-8 pl-space-sm pr-7 bg-surface-container-low text-on-surface text-label-md font-label-md rounded border border-outline-variant/40 appearance-none focus:border-primary focus:outline-none cursor-pointer" id="filter-merchant" onchange="filterQueueTable()">
+<option value="all">All Merchants</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 text-[16px] text-outline pointer-events-none">expand_more</span>
+</div>
+<div class="relative">
+<button class="h-8 px-space-sm bg-surface-container-low text-on-surface text-label-md font-label-md rounded border border-outline-variant/40 flex items-center gap-1.5 hover:bg-surface-container">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_today</span>
+<span id="header-current-date">—</span>
+</button>
+</div>
+</div>
+<!-- Primary Action -->
+<button class="h-8 px-space-md bg-primary-container hover:bg-primary-container/90 text-on-primary-container text-label-md font-label-md font-semibold rounded flex items-center gap-1.5 transition-all shadow-sm active:scale-95" id="btn-run-recon" onclick="triggerRunRecon()">
+<span class="material-symbols-outlined text-[16px] animate-none" id="icon-recon-spin">refresh</span>
+<span>Run Reconciliation</span>
+<span class="ml-1 px-1.5 py-0.25 bg-black/30 rounded text-[9px] font-mono-data-sm tracking-wider text-primary-fixed">POST /reconcile</span>
+</button>
+
+</div>
+</header>
+<!-- LOADING STATE CONTAINER (Hidden by default, shown during run simulation) -->
+<div class="hidden w-full p-space-md rounded bg-surface-container-low border border-primary-container/50 animate-pulse" id="state-loading-banner">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary animate-spin text-[24px]">sync</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Executing reconciliation engine POST /reconcile...</span>
+<span class="font-mono-data-sm text-mono-data-sm text-on-surface-variant">Matching transaction records against settlement records and classifying discrepancies...</span>
+</div>
+</div>
+<span class="px-space-md py-1 bg-primary-container/20 text-primary font-mono-data-sm text-mono-data-sm rounded border border-primary-container/40">Processing</span>
+</div>
+</div>
+<!-- 2. EXECUTIVE METRICS (KPI Cards 4-Col Grid) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Transactions Processed -->
+<div class="bg-surface-container-low rounded-lg p-space-lg border border-outline-variant/30 flex flex-col justify-between shadow-xs relative overflow-hidden group">
+<div class="absolute right-0 top-0 translate-x-2 -translate-y-2 opacity-10 text-on-surface group-hover:opacity-15 transition-opacity pointer-events-none">
+<span class="material-symbols-outlined text-[88px]">receipt_long</span>
+</div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md font-semibold text-on-surface-variant uppercase tracking-wider">Transactions Processed</span>
+<a class="font-mono-data-sm text-mono-data-sm text-primary hover:underline flex items-center gap-0.5" href="#">
+            GET /transactions <span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</a>
+</div>
+<div class="flex items-baseline gap-space-sm my-space-xs">
+<span class="font-mono-metric-lg text-mono-metric-lg font-bold text-on-surface mono-num" id="kpi-total-transactions">—</span>
+</div>
+</div>
+<!-- Card 2: Reconciled -->
+<div class="bg-surface-container-low rounded-lg p-space-lg border border-outline-variant/30 flex flex-col justify-between shadow-xs relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md font-semibold text-on-surface-variant uppercase tracking-wider">Reconciled</span>
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded bg-secondary/10 border border-secondary/30">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="text-secondary font-mono-data-sm text-mono-data-sm font-bold">Matched</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm my-space-xs">
+<span class="font-mono-metric-lg text-mono-metric-lg font-bold text-secondary mono-num" id="kpi-reconciled-count">—</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-mono-data-sm text-mono-data-sm font-bold" id="kpi-reconciled-pct">—</span>
+</div>
+</div>
+<!-- Card 3: Exceptions -->
+<div class="bg-surface-container-low rounded-lg p-space-lg border border-outline-variant/30 flex flex-col justify-between shadow-xs relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md font-semibold text-on-surface-variant uppercase tracking-wider">Exceptions Detected</span>
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded bg-tertiary-container/30 border border-tertiary/40">
+<span class="material-symbols-outlined text-[13px] text-tertiary">warning</span>
+<span class="text-tertiary font-mono-data-sm text-mono-data-sm font-bold">Action Required</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm my-space-xs">
+<span class="font-mono-metric-lg text-mono-metric-lg font-bold text-tertiary mono-num" id="kpi-exceptions-count">—</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary/20 text-tertiary font-mono-data-sm text-mono-data-sm font-bold" id="kpi-exceptions-pct">—</span>
+</div>
+</div>
+<!-- Card 4: Reconciliation Rate -->
+<div class="bg-surface-container-low rounded-lg p-space-lg border border-outline-variant/30 flex flex-col justify-between shadow-xs relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md font-semibold text-on-surface-variant uppercase tracking-wider">Reconciliation Rate</span>
+<span class="text-outline font-mono-data-sm text-mono-data-sm">Target: ≥ 95.0%</span>
+</div>
+<div class="flex items-baseline gap-space-sm my-space-xs">
+<span class="font-mono-metric-lg text-mono-metric-lg font-bold text-primary mono-num" id="kpi-rate-pct">—</span>
+<span class="font-mono-data-sm text-mono-data-sm font-semibold flex items-center" id="kpi-sla-gap">
+<span class="material-symbols-outlined text-[14px]" id="kpi-sla-gap-icon">trending_flat</span> <span id="kpi-sla-gap-text">—</span> below target
+          </span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full flex flex-col gap-1 pt-space-xs border-t border-outline-variant/20 mt-space-xs">
+<div class="w-full h-2 rounded bg-surface-container-highest overflow-hidden relative">
+<div class="h-full bg-primary-container rounded transition-all duration-700" id="kpi-progress-bar" style="width: 0%;"></div>
+<div class="absolute left-[95%] top-0 bottom-0 w-0.5 bg-outline" title="Target SLA 95%"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] font-mono-data-sm text-outline">
+<span>0%</span>
+<span class="text-primary-fixed" id="kpi-current-rate-label">Current: —%</span>
+<span>Target: 95%</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. RECONCILIATION OVERVIEW & EXCEPTION BREAKDOWN (Dual Split Grid) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Left Box: Reconciliation Ratio & Volume Bar (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-lg p-space-lg border border-outline-variant/30 flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm border-b border-outline-variant/20">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Reconciliation Ratio &amp; Settlement Float</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Batch integrity across gross capture vs processor settled payout</p>
+</div>
+</div>
+<!-- Visual Stacked Split Bar -->
+<div class="my-space-md flex flex-col gap-space-xs">
+<div class="flex justify-between items-center text-label-md font-label-md font-semibold">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-xs bg-secondary inline-block"></span>
+<span class="text-on-surface" id="split-bar-reconciled-label">Reconciled: — txns (—%)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-xs bg-tertiary inline-block"></span>
+<span class="text-on-surface" id="split-bar-exception-label">Exceptions: — txns (—%)</span>
+</div>
+</div>
+<div class="w-full h-7 rounded-sm overflow-hidden flex shadow-inner bg-surface-container-highest">
+<div class="h-full bg-secondary flex items-center justify-start pl-3 text-on-secondary font-mono-data-sm text-mono-data-sm font-bold transition-all" id="split-bar-reconciled" style="width: 0%;">
+            </div>
+<div class="h-full bg-tertiary-container flex items-center justify-end pr-3 text-on-tertiary-container font-mono-data-sm text-mono-data-sm font-bold transition-all" id="split-bar-exception" style="width: 0%;">
+            </div>
+</div>
+</div>
+<!-- Net Settlement Financial Summary Grid -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-sm border-t border-outline-variant/20 bg-surface-container/30 p-space-sm rounded">
+<div class="flex flex-col">
+<span class="font-label-xs text-label-xs uppercase text-outline">Expected Volume</span>
+<span class="font-mono-data-md text-mono-data-md text-on-surface font-semibold mono-num mt-0.5" id="summary-expected-volume">—</span>
+<span class="text-[11px] font-body-sm text-on-surface-variant">Merchant gross orders</span>
+</div>
+<div class="flex flex-col border-l border-outline-variant/30 pl-space-sm">
+<span class="font-label-xs text-label-xs uppercase text-secondary">Settled Volume</span>
+<span class="font-mono-data-md text-mono-data-md text-secondary font-semibold mono-num mt-0.5" id="summary-settled-volume">—</span>
+<span class="text-[11px] font-body-sm text-on-surface-variant">Cleared in bank depository</span>
+</div>
+<div class="flex flex-col border-l border-outline-variant/30 pl-space-sm">
+<span class="font-label-xs text-label-xs uppercase text-tertiary">Discrepancy Float</span>
+<span class="font-mono-data-md text-mono-data-md text-tertiary font-semibold mono-num mt-0.5" id="summary-discrepancy-float">—</span>
+<span class="text-[11px] font-body-sm text-error">Unsettled variance gap</span>
+</div>
+</div>
+</div>
+<!-- Right Box: Exception Distribution (Exact numbers) (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-low rounded-lg p-space-lg border border-outline-variant/30 flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/20">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Exception Distribution</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="distribution-subtitle">Categorized triage breakdown</p>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container/40 text-error font-mono-data-sm text-mono-data-sm font-bold" id="distribution-active-badge">— Active</span>
+</div>
+<div class="flex flex-col gap-space-sm my-space-xs" id="exception-distribution-list">
+<div class="text-body-sm font-body-sm text-on-surface-variant py-space-sm">Loading exception distribution...</div>
+</div>
+<div class="pt-space-xs border-t border-outline-variant/20 flex justify-between items-center text-[11px] font-mono-data-sm text-outline">
+<span id="distribution-sum-total"></span>
+</div>
+</div>
+</section>
+
+<!-- 4. EXCEPTION QUEUE (Professional Fintech Operations Data Table) -->
+<section class="bg-surface-container-low rounded-lg border border-outline-variant/30 overflow-hidden shadow-xs flex flex-col" id="section-exception-queue">
+<!-- Table Header & Filters Toolbar -->
+<div class="p-space-md bg-surface-container-low border-b border-outline-variant/30 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm flex-1 max-w-xl">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-[18px] text-outline">search</span>
+<input class="w-full h-8 pl-8 pr-space-md bg-surface-container-lowest text-on-surface text-body-sm font-body-sm rounded border border-outline-variant/40 focus:border-primary focus:outline-none placeholder:text-outline/70" id="input-search-queue" onkeyup="filterQueueTable()" placeholder="Filter by Txn ID, merchant name, or classification..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<select class="h-8 px-space-sm bg-surface-container-lowest text-on-surface text-label-md font-label-md rounded border border-outline-variant/40 focus:border-primary focus:outline-none" id="filter-type" onchange="filterQueueTable()">
+<option value="all">All Exception Types (5)</option>
+<option value="Amount Mismatch">Amount Mismatch</option>
+<option value="Missing Settlement">Missing Settlement</option>
+<option value="Fee Mismatch">Fee Mismatch</option>
+<option value="Duplicate Settlement">Duplicate Settlement</option>
+<option value="Date Mismatch">Date Mismatch</option>
+</select>
+<select class="h-8 px-space-sm bg-surface-container-lowest text-on-surface text-label-md font-label-md rounded border border-outline-variant/40 focus:border-primary focus:outline-none" id="filter-status" onchange="filterQueueTable()">
+<option value="all">All Statuses</option>
+<option value="Unresolved">Unresolved</option>
+<option value="Human Review">Human Review</option>
+<option value="Resolved">Resolved</option>
+</select>
+<button class="h-8 px-space-sm bg-surface-container text-on-surface-variant hover:text-on-surface rounded border border-outline-variant/40 text-label-md font-label-md flex items-center gap-1" title="Export CSV">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span class="hidden sm:inline">Export</span>
+</button>
+</div>
+</div>
+<!-- High Density Table Container -->
+<div class="w-full overflow-x-auto custom-scrollbar">
+<table class="w-full text-left border-collapse" id="queue-table">
+<thead>
+<tr class="h-8 bg-surface-container border-b border-outline-variant/40 font-label-xs text-label-xs text-outline uppercase tracking-wider select-none">
+<th class="px-space-md font-semibold">Transaction ID</th>
+<th class="px-space-md font-semibold">Merchant</th>
+<th class="px-space-md font-semibold">Exception Type</th>
+<th class="px-space-md font-semibold text-right">Expected</th>
+<th class="px-space-md font-semibold text-right">Actual</th>
+<th class="px-space-md font-semibold text-center">Status</th>
+<th class="px-space-md font-semibold">Detected</th>
+<th class="px-space-md font-semibold text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20 font-body-sm text-body-sm text-on-surface">
+<tr><td colspan="8" class="px-space-md py-space-lg text-center text-on-surface-variant"><span class="material-symbols-outlined animate-spin text-primary mr-2 align-middle">sync</span>Loading exceptions...</td></tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="p-space-sm bg-surface-container border-t border-outline-variant/30 flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span id="queue-footer-count">Showing — of — exception records</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-7 h-7 rounded bg-surface-container-low flex items-center justify-center text-outline hover:text-on-surface disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<span class="px-2 py-1 bg-primary-container text-on-primary-container rounded font-mono-data-sm text-mono-data-sm font-bold">1</span>
+<button class="w-7 h-7 rounded bg-surface-container-low flex items-center justify-center text-outline hover:text-on-surface disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 5. EXCEPTION DETAIL EXPERIENCE & AI INVESTIGATION PANEL -->
+<section class="bg-surface-container-low rounded-lg border border-primary/30 shadow-md overflow-hidden flex flex-col transition-all" id="investigation-anchor">
+<!-- Panel Header Bar with Discrepancy Border Accent (Level 2) -->
+<div class="p-space-md bg-surface-container-high border-b border-outline-variant/40 flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-2.5 h-8 bg-error rounded-xs"></div>
+<div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight" id="investigation-title">Exception Detail</h2>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-mono-data-sm text-mono-data-sm font-semibold border border-primary/30 hidden" id="investigation-merchant-badge">Merchant: —</span>
+<span class="px-2 py-0.5 rounded bg-error-container/30 text-error font-label-xs text-label-xs font-bold border border-error/40 hidden" id="investigation-type-badge">—</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="investigation-subtitle">Select an exception from the queue and click Investigate to run the AI analysis.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant" onclick="toggleCollapseDetails()" title="Toggle Panel Expand">
+<span class="material-symbols-outlined text-[20px]" id="icon-collapse">expand_less</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-lg p-space-lg" id="investigation-body-container">
+<!-- Empty state shown until an exception is selected for investigation -->
+<div class="flex flex-col items-center justify-center gap-space-sm py-space-2xl text-center" id="investigation-empty-state">
+<span class="material-symbols-outlined text-primary text-[40px]">psychology</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">No Exception Selected</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Select an exception from the queue above and click <strong>Investigate</strong> to run the AI discrepancy analysis.</p>
+</div>
+<!-- Detail content: hidden until an exception is selected -->
+<div class="hidden flex-col gap-space-lg" id="investigation-detail-content">
+<!-- Transaction & Settlement Data Grid (Side-by-side reconciliation comparison) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container rounded-lg border border-outline-variant/30">
+<!-- Column 1: Transaction Side -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs font-bold uppercase text-outline">Internal Ledger Capture</span>
+<span class="material-symbols-outlined text-[16px] text-primary">database</span>
+</div>
+<div class="flex flex-col">
+<span class="font-mono-data-sm text-mono-data-sm text-outline">Txn ID: <span class="text-on-surface font-bold" id="detail-txn-id">—</span></span>
+<span class="font-mono-data-sm text-mono-data-sm text-outline">Merchant: <span class="text-on-surface" id="detail-merchant">—</span></span>
+</div>
+<div class="mt-space-xs pt-space-xs border-t border-outline-variant/20 flex flex-col">
+<span class="font-label-xs text-label-xs text-outline uppercase">Gross Expected Amount</span>
+<span class="font-mono-metric-lg text-mono-metric-lg font-bold text-on-surface mono-num" id="detail-expected-amount">—</span>
+</div>
+</div>
+<!-- Column 2: Settlement Side -->
+<div class="flex flex-col gap-space-xs md:border-l md:border-outline-variant/30 md:pl-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs font-bold uppercase text-outline">Processor Settlement Log</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">account_balance</span>
+</div>
+<div class="flex flex-col">
+<span class="font-mono-data-sm text-mono-data-sm text-outline">Exception Type: <span class="text-on-surface font-bold" id="detail-exception-type">—</span></span>
+<span class="font-mono-data-sm text-mono-data-sm text-outline">Status: <span class="text-on-surface" id="detail-status">—</span></span>
+</div>
+<div class="mt-space-xs pt-space-xs border-t border-outline-variant/20 flex flex-col">
+<span class="font-label-xs text-label-xs text-outline uppercase">Actual Received Amount</span>
+<span class="font-mono-metric-lg text-mono-metric-lg font-bold text-on-surface mono-num" id="detail-actual-amount">—</span>
+</div>
+</div>
+<!-- Column 3: Reconciliation Delta Card -->
+<div class="flex flex-col justify-between bg-surface-container-lowest p-space-md rounded border-l-4 border-error border-y border-r border-outline-variant/40">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs font-bold uppercase text-error">Variance Detected</span>
+<span class="px-1.5 py-0.25 bg-error-container text-error rounded font-mono-data-sm text-mono-data-sm font-bold" id="detail-variance-pct">—</span>
+</div>
+<div class="mt-2">
+<span class="font-mono-metric-lg text-mono-metric-lg font-bold text-error mono-num" id="detail-variance-amount">—</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Net unallocated cash variance between expected transaction gross and clearing settlement payout.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- AI INVESTIGATION SECTION (Gemini Financial Intelligence Engine) -->
+<div class="flex flex-col rounded-lg bg-surface-container-lowest border border-primary/40 overflow-hidden shadow-sm" id="ai-active-panel">
+<!-- AI Engine Header Bar with Mandatory Regulatory Disclaimer -->
+<div class="p-space-md bg-gradient-to-r from-primary-container/20 via-surface-container to-surface-container-lowest border-b border-primary/20 flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-primary-container flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-on-primary-container text-[20px]">psychology</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Gemini AI Discrepancy Analysis</h3>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-mono-data-sm text-mono-data-sm">gemini-3.6-flash</span>
+</div>
+<span class="font-mono-data-sm text-mono-data-sm text-outline">AI-assisted discrepancy analysis — advisory output only</span>
+</div>
+</div>
+<!-- Mandatory Disclaimer Badge -->
+<div class="flex items-center gap-2 px-space-sm py-1 rounded bg-tertiary-container/20 border border-tertiary/40">
+<span class="material-symbols-outlined text-[15px] text-tertiary">gavel</span>
+<span class="font-label-xs text-label-xs text-tertiary font-bold uppercase tracking-wider">
+                Advisory Only — Autonomous Execution Disabled
+              </span>
+</div>
+</div>
+<!-- AI Findings Body Grid -->
+<div class="p-space-lg grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Analysis & Evidence (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Root Cause -->
+<div class="flex flex-col gap-1">
+<span class="font-label-xs text-label-xs uppercase text-primary font-bold tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">find_in_page</span> AI Root Cause Diagnosis
+                </span>
+<div class="p-space-sm rounded bg-surface-container/60 border border-outline-variant/30 text-body-md font-body-md text-on-surface leading-relaxed">
+                  Investigation not yet run.
+                </div>
+</div>
+<!-- Evidence Log -->
+<div class="flex flex-col gap-1">
+<span class="font-label-xs text-label-xs uppercase text-outline font-bold tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">fact_check</span> Corroborating Forensic Evidence
+                </span>
+<div class="flex flex-col gap-1.5 font-mono-data-sm text-mono-data-sm">
+<div class="p-2 rounded bg-surface-container/40 border border-outline-variant/20 flex items-start gap-2">
+<span class="text-on-surface-variant">No evidence available yet.</span>
+</div>
+</div>
+</div>
+<!-- Recommended Action -->
+<div class="flex flex-col gap-1">
+<span class="font-label-xs text-label-xs uppercase text-secondary font-bold tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">auto_fix_high</span> Recommended Journal Entry Action
+                </span>
+<div class="p-space-sm rounded bg-surface-container border-l-2 border-secondary text-body-md font-body-md text-on-surface">
+                  No recommendation yet.
+                </div>
+</div>
+</div>
+<!-- AI Confidence & Compliance Indicators (4 cols) -->
+<div class="lg:col-span-4 flex flex-col justify-between p-space-md rounded bg-surface-container/50 border border-outline-variant/30">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/20">
+<span class="font-label-xs text-label-xs uppercase text-outline">Confidence Score</span>
+<span class="font-mono-data-md text-mono-data-md text-secondary font-bold">—</span>
+</div>
+<!-- Confidence Gauge Visual -->
+<div class="flex flex-col gap-1">
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 0%;"></div>
+</div>
+<div class="flex justify-between text-[10px] font-mono-data-sm text-outline">
+<span>Threshold: 85%</span>
+<span class="text-secondary">Self-reported by model</span>
+</div>
+</div>
+<!-- Compliance Box -->
+<div class="p-space-sm rounded bg-surface-container-lowest border border-outline-variant/30 flex flex-col gap-1 mt-space-xs">
+<div class="flex items-center gap-1.5 text-tertiary">
+<span class="material-symbols-outlined text-[15px]">verified_user</span>
+<span class="font-label-xs text-label-xs font-bold uppercase">Human Review Required</span>
+</div>
+<p class="text-[11px] font-body-sm text-on-surface-variant">
+                    Every exception requires an explicit <strong>Approve</strong> or <strong>Reject</strong> decision from a controller — no status change is applied automatically.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- AI SIMULATION: FAILED / UNAVAILABLE STATE (Hidden in normal view, toggled by switcher) -->
+<div class="hidden flex-col rounded-lg bg-surface-container-lowest border border-error/50 p-space-lg" id="ai-failed-panel">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-error-container/30 border border-error/50 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-error text-[24px]">error_outline</span>
+</div>
+<div class="flex flex-col gap-space-xs flex-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-error font-bold">AI investigation unavailable</h3>
+<span class="px-2 py-0.5 rounded bg-error/20 text-error font-mono-data-sm text-mono-data-sm font-bold" id="ai-failed-error-code">Error</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">No automated recommendation was generated. Human review required.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="ai-failed-detail">The AI investigation request failed.</p>
+<div class="mt-space-sm pt-space-sm border-t border-outline-variant/20 flex items-center gap-space-sm">
+<button class="h-8 px-space-md bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold rounded border border-outline-variant flex items-center gap-1.5" onclick="retryAIInvestigation()">
+<span class="material-symbols-outlined text-[16px]">refresh</span> Retry Model Evaluation
+                </button>
+<span class="font-mono-data-sm text-mono-data-sm text-outline">Fallback: Manual Journal Entry Entry</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 6. HUMAN REVIEW CONTROLS (Decoupled & Protected Controller Decision Card) -->
+<div class="rounded-lg bg-surface-container p-space-lg border border-outline-variant/40 flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-space-xs border-b border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">admin_panel_settings</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Controller Decision &amp; Audit Record</h3>
+</div>
+<span class="font-mono-data-sm text-mono-data-sm text-outline">Actor: finops_lead@ledgerguard.internal (Demo Persona — no authentication)</span>
+</div>
+<!-- Decision confirmation notice -->
+<div class="p-space-sm rounded bg-surface-container-lowest border-l-4 border-primary border-y border-r border-outline-variant/30 flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">info</span>
+<span class="text-body-sm font-body-sm text-on-surface">
+<strong>Notice:</strong> Executing a decision updates the exception status and appends an entry to the audit trail below. This is a demo environment — it is not connected to a real accounting ledger or signing infrastructure.
+            </span>
+</div>
+<!-- Controller Notes Input -->
+<div class="flex flex-col gap-1">
+<label class="font-label-xs text-label-xs uppercase text-on-surface-variant font-semibold" for="reviewer-notes">Controller Reviewer Notes (Optional Ledger Memo)</label>
+<input class="w-full h-8 px-space-sm bg-surface-container-lowest text-on-surface text-body-sm font-body-sm rounded border border-outline-variant/40 focus:border-primary focus:outline-none placeholder:text-outline/70" id="reviewer-notes" placeholder="e.g., Verified against contract addendum #B-12 and Intermediary schedule fee memo..." type="text"/>
+</div>
+<!-- Protected Button Cluster -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs font-mono-data-sm text-mono-data-sm text-outline">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Decision will be recorded in the audit trail</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<!-- Reject / Escalate -->
+<button class="h-9 px-space-md bg-surface-container-low hover:bg-error-container/20 text-error hover:text-error-container border border-error/40 font-label-md text-label-md font-semibold rounded flex items-center gap-1.5 transition-colors" onclick="handleDecision('reject')">
+<span class="material-symbols-outlined text-[16px]">cancel</span>
+<span>Reject / Escalate Case</span>
+<span class="text-[9px] font-mono-data-sm opacity-80">POST /reject</span>
+</button>
+<!-- Approve Recommendation -->
+<button class="h-9 px-space-lg bg-secondary text-on-secondary hover:bg-secondary-fixed font-label-md text-label-md font-bold rounded flex items-center gap-1.5 transition-all shadow-sm" onclick="handleDecision('approve')">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Approve Recommendation</span>
+<span class="ml-1 px-1 py-0.25 bg-black/20 rounded text-[9px] font-mono-data-sm">POST /approve</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 7. AUDIT TRAIL TIMELINE (Chronological lifecycle tracking) -->
+<div class="flex flex-col gap-space-sm pt-space-xs" id="section-audit-trail">
+<div class="flex items-center justify-between pb-space-2xs border-b border-outline-variant/20">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[18px]">history</span>
+              Chronological Audit Trail
+            </h4>
+</div>
+<div class="relative pl-6 flex flex-col gap-space-md before:content-[''] before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-outline-variant/40">
+<div class="text-on-surface-variant font-body-sm pl-0">Loading audit trail...</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- INTERACTIVE MODAL / DIALOG (For Controller Decision Confirmation) -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-xs p-space-md" id="decision-modal">
+<div class="bg-surface-container-high rounded-lg border border-outline-variant max-w-md w-full p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded bg-secondary/20 border border-secondary/40 flex items-center justify-center shrink-0" id="modal-icon-container">
+<span class="material-symbols-outlined text-secondary text-[24px]" id="modal-icon">verified</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold" id="modal-title">Confirm Decision</h3>
+<span class="font-mono-data-sm text-mono-data-sm text-outline" id="modal-endpoint">—</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" id="modal-desc">
+        —
+      </p>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs border-t border-outline-variant/20">
+<button class="h-8 px-space-md bg-surface-container hover:bg-surface-container-highest text-on-surface text-label-md font-label-md rounded" onclick="closeModal()">Cancel</button>
+<button class="h-8 px-space-md bg-secondary text-on-secondary font-label-md text-label-md font-bold rounded" id="modal-confirm-btn" onclick="executeConfirmedAction()">Commit Action</button>
+</div>
+</div>
+</div>
+<!-- VANILLA JAVASCRIPT CONTROLLER LOGIC -->
+<script>
+    const API_BASE = 'http://127.0.0.1:8000';
+    let currentModalAction = '';
+    let selectedExceptionId = null;
+    let exceptionsCache = [];
+
+    const INR = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' });
+
+    // ── Helpers ──
+    function showError(el, msg) {
+      if (typeof el === 'string') el = document.getElementById(el);
+      if (el) el.innerHTML = `<span class="text-error font-mono-data-sm text-mono-data-sm">${msg}</span>`;
+    }
+
+    async function api(path, opts = {}) {
+      const res = await fetch(`${API_BASE}${path}`, opts);
+      if (!res.ok) {
+        let payload = null;
+        try { payload = await res.json(); } catch (_) {}
+        const err = new Error((payload && (payload.message || payload.error)) || `HTTP ${res.status}`);
+        err.status = res.status;
+        err.payload = payload;
+        throw err;
+      }
+      return res.json();
+    }
+
+    function statusBadge(status) {
+      const s = (status || '').toLowerCase();
+      if (s === 'unresolved') return `<span class="px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-label-xs text-label-xs font-bold border border-tertiary/40">Unresolved</span>`;
+      if (s === 'resolved' || s === 'approved') return `<span class="px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-xs text-label-xs font-bold border border-secondary/30">Resolved</span>`;
+      if (s === 'rejected') return `<span class="px-2 py-0.5 rounded-full bg-error-container/30 text-error font-label-xs text-label-xs font-bold border border-error/30">Rejected</span>`;
+      if (s === 'human review' || s === 'investigating') return `<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-fixed font-label-xs text-label-xs font-bold border border-primary-container/40">Human Review</span>`;
+      return `<span class="px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-label-xs text-label-xs font-bold">${status}</span>`;
+    }
+
+    function exceptionTypeBadge(type) {
+      const t = (type || '').toLowerCase();
+      const label = exceptionTypeStyle(type).label;
+      if (t.includes('amount')) return `<span class="px-2 py-0.5 rounded bg-error-container/30 text-error font-label-xs text-label-xs font-bold border border-error/30">${label}</span>`;
+      if (t.includes('missing')) return `<span class="px-2 py-0.5 rounded bg-tertiary-container/30 text-tertiary font-label-xs text-label-xs font-bold border border-tertiary/30">${label}</span>`;
+      if (t.includes('fee')) return `<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-label-xs text-label-xs font-bold border border-primary-container/30">${label}</span>`;
+      if (t.includes('duplicate')) return `<span class="px-2 py-0.5 rounded bg-error-container/40 text-error font-label-xs text-label-xs font-bold border border-error/30">${label}</span>`;
+      if (t.includes('date')) return `<span class="px-2 py-0.5 rounded bg-surface-variant text-on-surface-variant font-label-xs text-label-xs font-bold border border-outline-variant/40">${label}</span>`;
+      return `<span class="px-2 py-0.5 rounded bg-surface-variant text-on-surface-variant font-label-xs text-label-xs font-bold">${label}</span>`;
+    }
+
+    function timeSince(dateStr) {
+      if (!dateStr) return '';
+      const diff = Date.now() - new Date(dateStr).getTime();
+      const mins = Math.floor(diff / 60000);
+      if (mins < 1) return 'just now';
+      if (mins < 60) return `${mins}m ago`;
+      const hrs = Math.floor(mins / 60);
+      if (hrs < 24) return `${hrs}h ${mins % 60}m ago`;
+      return `${Math.floor(hrs / 24)}d ago`;
+    }
+
+    // ── Dashboard / KPI ──
+    const EXCEPTION_TYPE_STYLES = {
+      amount_mismatch: { label: 'Amount Mismatch', dot: 'bg-error', bar: 'bg-error', badge: 'bg-error-container/40 text-error' },
+      missing_settlement: { label: 'Missing Settlement', dot: 'bg-tertiary', bar: 'bg-tertiary', badge: 'bg-tertiary-container/40 text-tertiary' },
+      fee_mismatch: { label: 'Fee Mismatch', dot: 'bg-primary-container', bar: 'bg-primary-container', badge: 'bg-primary-container/30 text-primary-fixed' },
+      date_mismatch: { label: 'Date Mismatch', dot: 'bg-surface-bright', bar: 'bg-outline', badge: 'bg-surface-variant text-on-surface-variant' },
+      duplicate_settlement: { label: 'Duplicate Settlement', dot: 'bg-error-container', bar: 'bg-error/60', badge: 'bg-error/20 text-error' },
+    };
+
+    function exceptionTypeStyle(type) {
+      return EXCEPTION_TYPE_STYLES[type] || {
+        label: type || 'Unknown',
+        dot: 'bg-outline',
+        bar: 'bg-outline',
+        badge: 'bg-surface-variant text-on-surface-variant',
+      };
+    }
+
+    function renderExceptionDistribution(breakdown, totalExceptions) {
+      const list = document.getElementById('exception-distribution-list');
+      const subtitle = document.getElementById('distribution-subtitle');
+      const activeBadge = document.getElementById('distribution-active-badge');
+      const sumTotal = document.getElementById('distribution-sum-total');
+
+      const entries = Object.entries(breakdown || {});
+
+      subtitle.textContent = `Categorized triage breakdown (${totalExceptions} total exceptions)`;
+      activeBadge.textContent = `${totalExceptions} Active`;
+
+      if (entries.length === 0) {
+        list.innerHTML = '<div class="text-body-sm font-body-sm text-on-surface-variant py-space-sm">No exceptions recorded.</div>';
+        sumTotal.textContent = '';
+        return;
+      }
+
+      list.innerHTML = entries.map(([type, count]) => {
+        const style = exceptionTypeStyle(type);
+        const pct = totalExceptions > 0 ? (count / totalExceptions) * 100 : 0;
+        return `<div class="flex flex-col gap-1">
+          <div class="flex justify-between items-center text-body-sm">
+            <span class="text-on-surface font-medium flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full ${style.dot}"></span> ${style.label}
+            </span>
+            <div class="flex items-center gap-2">
+              <span class="font-mono-data-sm text-mono-data-sm text-outline">${pct.toFixed(1)}%</span>
+              <span class="px-1.5 py-0.25 rounded ${style.badge} font-mono-data-sm text-mono-data-sm font-bold min-w-[24px] text-center">${count}</span>
+            </div>
+          </div>
+          <div class="w-full h-1.5 bg-surface-container rounded overflow-hidden">
+            <div class="${style.bar} h-full rounded" style="width: ${pct.toFixed(1)}%;"></div>
+          </div>
+        </div>`;
+      }).join('');
+
+      sumTotal.textContent = `Sum Total Verified: ${entries.map(([, c]) => c).join('+')} = ${totalExceptions}`;
+    }
+
+    async function fetchDashboard() {
+      try {
+        const d = await api('/dashboard');
+        const total = d.total_transactions || 0;
+        const rec = d.reconciled || 0;
+        const exc = d.exceptions || 0;
+        const rate = d.reconciliation_rate || 0;
+
+        // Card 1: Transactions Processed
+        document.getElementById('kpi-total-transactions').textContent = total;
+
+        // Card 2: Reconciled
+        document.getElementById('kpi-reconciled-count').textContent = rec;
+        document.getElementById('kpi-reconciled-pct').textContent = `${rate.toFixed(1)}% auto-settled`;
+
+        // Card 3: Exceptions
+        document.getElementById('kpi-exceptions-count').textContent = exc;
+        document.getElementById('kpi-exceptions-pct').textContent = `${total > 0 ? ((exc / total) * 100).toFixed(1) : 0}% queue`;
+
+        // Card 4: Reconciliation Rate
+        const rateEl = document.getElementById('kpi-rate-pct');
+        rateEl.textContent = `${rate.toFixed(1)}%`;
+        const bar = document.getElementById('kpi-progress-bar');
+        bar.style.width = `${rate.toFixed(1)}%`;
+        const slaTarget = 95;
+        const gap = rate - slaTarget;
+        const gapEl = document.getElementById('kpi-sla-gap');
+        const gapIcon = document.getElementById('kpi-sla-gap-icon');
+        const gapText = document.getElementById('kpi-sla-gap-text');
+        if (gapEl && gapIcon && gapText) {
+          gapText.textContent = `${Math.abs(gap).toFixed(1)} pts`;
+          gapIcon.textContent = gap >= 0 ? 'trending_up' : 'trending_down';
+          gapEl.className = `font-mono-data-sm text-mono-data-sm font-semibold flex items-center ${gap >= 0 ? 'text-secondary' : 'text-error'}`;
+        }
+        const currentRateLabel = document.getElementById('kpi-current-rate-label');
+        if (currentRateLabel) currentRateLabel.textContent = `Current: ${rate.toFixed(1)}%`;
+
+        // Settlement Float split bar + summary
+        const excPct = total > 0 ? (exc / total) * 100 : 0;
+        document.getElementById('split-bar-reconciled-label').textContent = `Reconciled: ${rec} txns (${rate.toFixed(1)}%)`;
+        document.getElementById('split-bar-exception-label').textContent = `Exceptions: ${exc} txns (${excPct.toFixed(1)}%)`;
+        document.getElementById('split-bar-reconciled').style.width = `${rate.toFixed(1)}%`;
+        document.getElementById('split-bar-exception').style.width = `${excPct.toFixed(1)}%`;
+        document.getElementById('summary-expected-volume').textContent = INR.format(d.expected_volume || 0);
+        document.getElementById('summary-settled-volume').textContent = INR.format(d.settled_volume || 0);
+        document.getElementById('summary-discrepancy-float').textContent = INR.format(d.discrepancy_float || 0);
+
+        // Exception Distribution
+        renderExceptionDistribution(d.exception_breakdown, exc);
+
+        // Nav badge
+        const navBadge = document.querySelector('nav a[data-path="exceptions"] span');
+        if (navBadge) navBadge.textContent = exc;
+      } catch (e) {
+        showError('kpi-reconciled-count', 'N/A');
+        showError('kpi-exceptions-count', 'N/A');
+        showError('kpi-rate-pct', 'N/A');
+        console.error('Dashboard fetch failed:', e);
+      }
+    }
+
+    // ── Exceptions Table ──
+    async function fetchExceptions() {
+      const tbody = document.querySelector('#queue-table tbody');
+      tbody.innerHTML = '<tr><td colspan="8" class="px-space-md py-space-lg text-center text-on-surface-variant"><span class="material-symbols-outlined animate-spin text-primary mr-2 align-middle">sync</span>Loading exceptions...</td></tr>';
+      try {
+        const data = await api('/exceptions');
+        exceptionsCache = data;
+        if (!data || data.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="8" class="px-space-md py-space-lg text-center text-on-surface-variant">No exceptions found. All transactions reconciled.</td></tr>';
+          return;
+        }
+        tbody.innerHTML = data.map((ex, i) => {
+          const diff = (ex.actual_amount || 0) - (ex.expected_amount || 0);
+          const diffStr = diff >= 0 ? `+${INR.format(Math.abs(diff))}` : `-${INR.format(Math.abs(diff))}`;
+          const diffClass = diff >= 0 ? 'text-secondary' : 'text-error';
+          const isSelected = (i === 0 && !selectedExceptionId) || selectedExceptionId === ex.id;
+          return `<tr class="h-10 hover:bg-surface-container-high transition-colors cursor-pointer ${isSelected ? 'table-row-selected' : ''}" onclick="selectException(${ex.id})">
+            <td class="px-space-md font-mono-data-md text-mono-data-md ${isSelected ? 'text-primary font-bold' : 'text-on-surface-variant font-medium'}">
+              <div class="flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[15px] ${isSelected ? 'text-primary' : 'text-outline'}">${isSelected ? 'radio_button_checked' : 'radio_button_unchecked'}</span>
+                <span>${ex.transaction_id}</span>
+              </div>
+            </td>
+            <td class="px-space-md font-semibold text-on-surface">${ex.merchant || '—'}</td>
+            <td class="px-space-md">${exceptionTypeBadge(ex.exception_type)}</td>
+            <td class="px-space-md text-right font-mono-data-md text-mono-data-md text-on-surface mono-num">${INR.format(ex.expected_amount || 0)}</td>
+            <td class="px-space-md text-right">
+              <div class="flex items-center justify-end gap-1.5">
+                <span class="font-mono-data-md text-mono-data-md text-on-surface mono-num">${INR.format(ex.actual_amount || 0)}</span>
+                <span class="px-1 py-0.25 rounded bg-error-container/50 ${diffClass} font-mono-data-sm text-[10px] font-bold">${diffStr}</span>
+              </div>
+            </td>
+            <td class="px-space-md text-center">${statusBadge(ex.status)}</td>
+            <td class="px-space-md text-outline font-mono-data-sm text-mono-data-sm">${timeSince(ex.detected_at)}</td>
+            <td class="px-space-md text-right">
+              <button class="px-2.5 py-1 rounded bg-primary text-on-primary font-label-xs text-label-xs font-bold hover:bg-primary-fixed transition-colors shadow-xs flex items-center gap-1 ml-auto" onclick="investigateException(${ex.id}); event.stopPropagation();">
+                <span>Investigate</span>
+                <span class="material-symbols-outlined text-[13px]">arrow_downward</span>
+              </button>
+            </td>
+          </tr>`;
+        }).join('');
+        // Update pagination footer
+        const footerSpan = document.getElementById('queue-footer-count');
+        if (footerSpan) footerSpan.textContent = `Showing ${data.length} of ${data.length} exception records`;
+      } catch (e) {
+        tbody.innerHTML = '<tr><td colspan="8" class="px-space-md py-space-lg text-center text-error font-mono-data-sm">Backend unavailable — cannot load exceptions.</td></tr>';
+        console.error('Exceptions fetch failed:', e);
+      }
+    }
+
+    function selectException(id) {
+      selectedExceptionId = id;
+      // Re-highlight rows
+      document.querySelectorAll('#queue-table tbody tr').forEach(row => {
+        row.classList.remove('table-row-selected');
+        const radio = row.querySelector('.material-symbols-outlined');
+        if (radio) radio.textContent = 'radio_button_unchecked';
+      });
+      event.currentTarget.classList.add('table-row-selected');
+      const radio = event.currentTarget.querySelector('.material-symbols-outlined');
+      if (radio) radio.textContent = 'radio_button_checked';
+    }
+
+    // ── Investigate ──
+    async function investigateException(exceptionId) {
+      selectedExceptionId = exceptionId;
+      const anchor = document.getElementById('investigation-anchor');
+      const emptyState = document.getElementById('investigation-empty-state');
+      const detailContent = document.getElementById('investigation-detail-content');
+      const activePanel = document.getElementById('ai-active-panel');
+      const failedPanel = document.getElementById('ai-failed-panel');
+
+      // Reveal the detail content, hide the empty state
+      emptyState.classList.add('hidden');
+      detailContent.classList.remove('hidden');
+      detailContent.classList.add('flex');
+
+      // Show loading state in investigation panel
+      activePanel.classList.remove('hidden');
+      activePanel.classList.add('flex');
+      failedPanel.classList.add('hidden');
+      failedPanel.classList.remove('flex');
+
+      // Find exception info from cache
+      const ex = exceptionsCache.find(e => e.id === exceptionId);
+      const txnId = ex ? ex.transaction_id : `#${exceptionId}`;
+
+      // Update header
+      document.getElementById('investigation-title').textContent = `Exception Detail — ${txnId}`;
+      document.getElementById('investigation-subtitle').textContent = `Reconciliation variance for ${txnId}`;
+      const merchantBadge = document.getElementById('investigation-merchant-badge');
+      merchantBadge.textContent = `Merchant: ${ex?.merchant || '—'}`;
+      merchantBadge.classList.remove('hidden');
+      const typeBadge = document.getElementById('investigation-type-badge');
+      typeBadge.textContent = ex?.exception_type || '—';
+      typeBadge.classList.remove('hidden');
+
+      // Populate the transaction/settlement comparison grid from real exception data
+      const expected = ex?.expected_amount || 0;
+      const actual = ex?.actual_amount;
+      document.getElementById('detail-txn-id').textContent = txnId;
+      document.getElementById('detail-merchant').textContent = ex?.merchant || '—';
+      document.getElementById('detail-expected-amount').textContent = INR.format(expected);
+      document.getElementById('detail-exception-type').textContent = ex?.exception_type || '—';
+      document.getElementById('detail-status').textContent = ex?.status || '—';
+      document.getElementById('detail-actual-amount').textContent = actual != null ? INR.format(actual) : 'No settlement received';
+
+      const variance = actual != null ? actual - expected : null;
+      const variancePct = variance != null && expected ? (variance / expected) * 100 : null;
+      document.getElementById('detail-variance-pct').textContent = variancePct != null ? `${variancePct.toFixed(2)}%` : '—';
+      document.getElementById('detail-variance-amount').textContent = variance != null ? INR.format(variance) : '—';
+
+      anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      // Show spinner in the AI panel body
+      const analysisBody = activePanel.querySelector('.lg\\:col-span-8');
+      if (analysisBody) analysisBody.innerHTML = '<div class="flex items-center gap-space-md py-space-xl"><span class="material-symbols-outlined animate-spin text-primary text-[24px]">sync</span><span class="text-on-surface-variant">Running AI investigation...</span></div>';
+
+      try {
+        const result = await api(`/exceptions/${exceptionId}/investigate`, { method: 'POST' });
+        const inv = result.investigation;
+
+        if (!inv) throw new Error('No investigation data returned');
+
+        // Populate analysis body
+        const evidence = Array.isArray(inv.evidence) ? inv.evidence : (typeof inv.evidence === 'string' ? inv.evidence.split('\n').filter(l => l.trim()) : [String(inv.evidence)]);
+        analysisBody.innerHTML = `
+          <div class="flex flex-col gap-space-md">
+            <div class="flex flex-col gap-1">
+              <span class="font-label-xs text-label-xs uppercase text-primary font-bold tracking-wider flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[14px]">find_in_page</span> AI Root Cause Diagnosis
+              </span>
+              <div class="p-space-sm rounded bg-surface-container/60 border border-outline-variant/30 text-body-md font-body-md text-on-surface leading-relaxed">
+                ${inv.root_cause || 'No root cause identified.'}
+              </div>
+            </div>
+            <div class="flex flex-col gap-1">
+              <span class="font-label-xs text-label-xs uppercase text-outline font-bold tracking-wider flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[14px]">fact_check</span> Corroborating Forensic Evidence
+              </span>
+              <div class="flex flex-col gap-1.5 font-mono-data-sm text-mono-data-sm">
+                ${evidence.map((e, i) => `<div class="p-2 rounded bg-surface-container/40 border border-outline-variant/20 flex items-start gap-2"><span class="text-secondary font-bold">${i + 1}.</span><span class="text-on-surface-variant">${e}</span></div>`).join('')}
+              </div>
+            </div>
+            <div class="flex flex-col gap-1">
+              <span class="font-label-xs text-label-xs uppercase text-secondary font-bold tracking-wider flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[14px]">auto_fix_high</span> Recommended Action
+              </span>
+              <div class="p-space-sm rounded bg-surface-container border-l-2 border-secondary text-body-md font-body-md text-on-surface">
+                ${inv.recommended_action || 'No recommendation available.'}
+              </div>
+            </div>
+          </div>`;
+
+        // Update confidence sidebar
+        const sidebar = activePanel.querySelector('.lg\\:col-span-4');
+        if (sidebar) {
+          const confPct = typeof inv.confidence === 'number' ? (inv.confidence > 1 ? inv.confidence : inv.confidence * 100) : 0;
+          const confLabel = confPct >= 85 ? 'High' : confPct >= 60 ? 'Medium' : 'Low';
+          const confColor = confPct >= 85 ? 'text-secondary' : confPct >= 60 ? 'text-tertiary' : 'text-error';
+          sidebar.querySelector('.font-mono-data-md.font-bold').textContent = `${confPct.toFixed(1)}% ${confLabel}`;
+          sidebar.querySelector('.font-mono-data-md.font-bold').className = `font-mono-data-md text-mono-data-md ${confColor} font-bold`;
+          sidebar.querySelector('.bg-secondary').style.width = `${confPct.toFixed(1)}%`;
+          const humanReview = sidebar.querySelector('.font-label-xs.font-bold.uppercase');
+          if (humanReview) humanReview.textContent = inv.requires_human_review ? 'Human Review Required' : 'Auto-Resolvable';
+        }
+
+        // Update the decision panel endpoint labels
+        const rejectEndpointLabel = document.querySelector('button[onclick="handleDecision(\'reject\')"] .font-mono-data-sm');
+        if (rejectEndpointLabel) rejectEndpointLabel.textContent = `POST /reject`;
+        const approveEndpointLabel = document.querySelector('button[onclick="handleDecision(\'approve\')"] .font-mono-data-sm');
+        if (approveEndpointLabel) approveEndpointLabel.textContent = `POST /approve`;
+
+        // Refresh audit trail and exceptions table
+        await fetchAuditLogs();
+      } catch (e) {
+        // Show failed panel
+        activePanel.classList.add('hidden');
+        activePanel.classList.remove('flex');
+        failedPanel.classList.remove('hidden');
+        failedPanel.classList.add('flex');
+        failedPanel.querySelector('h3').textContent = (e.payload && e.payload.error) || 'AI investigation unavailable';
+        failedPanel.querySelector('p.font-body-md').textContent = 'AI investigation unavailable — human review required.';
+        document.getElementById('ai-failed-error-code').textContent = e.status ? `HTTP ${e.status}` : 'Error';
+        document.getElementById('ai-failed-detail').textContent = e.message || 'The AI investigation request failed.';
+        console.error('Investigation failed:', e);
+      }
+    }
+
+    // ── Audit Trail ──
+    async function fetchAuditLogs() {
+      const container = document.querySelector('#investigation-anchor .relative.pl-6');
+      if (!container) return;
+      try {
+        const logs = await api('/audit-logs');
+        if (!logs || logs.length === 0) {
+          container.innerHTML = '<div class="text-on-surface-variant font-body-sm">No audit events recorded yet.</div>';
+          return;
+        }
+        container.innerHTML = logs.map(log => {
+          const actionColor = log.action === 'approved' ? 'bg-secondary' : log.action === 'rejected' ? 'bg-error' : log.action === 'ai_investigation' ? 'bg-primary' : 'bg-outline';
+          const actionLabel = log.action === 'ai_investigation' ? 'AI investigation generated' : log.action === 'approved' ? 'Human reviewer approved' : log.action === 'rejected' ? 'Human reviewer rejected' : log.action;
+          const labelColor = log.action === 'approved' ? 'text-secondary' : log.action === 'rejected' ? 'text-error' : log.action === 'ai_investigation' ? 'text-primary' : 'text-on-surface';
+          return `<div class="relative flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 group">
+            <span class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full ${actionColor} ring-4 ring-surface"></span>
+            <div class="flex flex-col">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="font-mono-data-sm text-mono-data-sm text-on-surface font-bold">${new Date(log.created_at).toISOString().replace('T', ' ').slice(0, 19)} UTC</span>
+                <span class="px-1.5 py-0.25 rounded bg-surface-container font-mono-data-sm text-mono-data-sm text-outline">${log.actor || 'System'}</span>
+                <span class="${labelColor} font-label-xs text-label-xs font-bold uppercase">${actionLabel}</span>
+              </div>
+              <span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">${log.details || ''} (Exception #${log.exception_id})</span>
+            </div>
+          </div>`;
+        }).join('');
+      } catch (e) {
+        container.innerHTML = '<div class="text-error font-mono-data-sm">Could not load audit trail.</div>';
+        console.error('Audit logs fetch failed:', e);
+      }
+    }
+
+    // ── Run Reconciliation ──
+    async function triggerRunRecon() {
+      const loading = document.getElementById('state-loading-banner');
+      const spinIcon = document.getElementById('icon-recon-spin');
+      const btn = document.getElementById('btn-run-recon');
+      spinIcon.classList.add('animate-spin');
+      loading.classList.remove('hidden');
+      btn.disabled = true;
+      btn.style.opacity = '0.6';
+
+      try {
+        await api('/reconcile', { method: 'POST' });
+      } catch (e) {
+        console.error('Reconciliation failed:', e);
+        alert('Reconciliation failed. Is the backend running?');
+      } finally {
+        spinIcon.classList.remove('animate-spin');
+        loading.classList.add('hidden');
+        btn.disabled = false;
+        btn.style.opacity = '1';
+      }
+      await refreshAll();
+    }
+
+    // ── Approve / Reject ──
+    function handleDecision(type) {
+      if (!selectedExceptionId) {
+        alert('Please investigate an exception first.');
+        return;
+      }
+      currentModalAction = type;
+      const modal = document.getElementById('decision-modal');
+      const title = document.getElementById('modal-title');
+      const endpoint = document.getElementById('modal-endpoint');
+      const desc = document.getElementById('modal-desc');
+      const confirmBtn = document.getElementById('modal-confirm-btn');
+      const iconContainer = document.getElementById('modal-icon-container');
+      const icon = document.getElementById('modal-icon');
+
+      const ex = exceptionsCache.find(e => e.id === selectedExceptionId);
+      const txnLabel = ex ? ex.transaction_id : `#${selectedExceptionId}`;
+
+      if (type === 'approve') {
+        title.textContent = 'Approve Journal Recommendation';
+        endpoint.textContent = `POST /exceptions/${selectedExceptionId}/approve`;
+        desc.innerHTML = `Approve recommendation for <strong>${txnLabel}</strong>? This will mark the exception as resolved.`;
+        confirmBtn.className = 'h-8 px-space-md bg-secondary text-on-secondary font-label-md text-label-md font-bold rounded';
+        confirmBtn.textContent = 'Authorize Journal Entry';
+        iconContainer.className = 'w-10 h-10 rounded bg-secondary/20 border border-secondary/40 flex items-center justify-center shrink-0';
+        icon.className = 'material-symbols-outlined text-secondary text-[24px]';
+        icon.textContent = 'check_circle';
+      } else {
+        title.textContent = 'Reject Recommendation / Escalate Case';
+        endpoint.textContent = `POST /exceptions/${selectedExceptionId}/reject`;
+        desc.innerHTML = `Reject and escalate <strong>${txnLabel}</strong>? This will mark the exception as rejected.`;
+        confirmBtn.className = 'h-8 px-space-md bg-error text-on-error font-label-md text-label-md font-bold rounded';
+        confirmBtn.textContent = 'Confirm Escalation';
+        iconContainer.className = 'w-10 h-10 rounded bg-error-container/30 border border-error/40 flex items-center justify-center shrink-0';
+        icon.className = 'material-symbols-outlined text-error text-[24px]';
+        icon.textContent = 'warning';
+      }
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('decision-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    async function executeConfirmedAction() {
+      closeModal();
+      if (!selectedExceptionId) return;
+      const action = currentModalAction; // 'approve' or 'reject'
+      try {
+        await api(`/exceptions/${selectedExceptionId}/${action}`, { method: 'POST' });
+      } catch (e) {
+        console.error(`${action} failed:`, e);
+        alert(`Failed to ${action} exception. Is the backend running?`);
+      }
+      await refreshAll();
+    }
+
+    // ── Collapse / Scroll helpers (kept from original) ──
+    function scrollToInvestigation() {
+      const el = document.getElementById('investigation-anchor');
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function toggleCollapseDetails() {
+      const body = document.getElementById('investigation-body-container');
+      const icon = document.getElementById('icon-collapse');
+      if (body.classList.contains('hidden')) {
+        body.classList.remove('hidden');
+        icon.textContent = 'expand_less';
+      } else {
+        body.classList.add('hidden');
+        icon.textContent = 'expand_more';
+      }
+    }
+
+    function retryAIInvestigation() {
+      if (selectedExceptionId) investigateException(selectedExceptionId);
+    }
+
+    function filterQueueTable() {
+      const query = document.getElementById('input-search-queue').value.toLowerCase();
+      const typeFilter = document.getElementById('filter-type').value;
+      const statusFilter = document.getElementById('filter-status').value;
+      const merchantEl = document.getElementById('filter-merchant');
+      const merchantFilter = merchantEl ? merchantEl.value : 'all';
+      const table = document.getElementById('queue-table');
+      const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+      for (let i = 0; i < rows.length; i++) {
+        const rowText = rows[i].textContent.toLowerCase();
+        const matchesQuery = query === '' || rowText.includes(query);
+        const matchesType = typeFilter === 'all' || rowText.includes(typeFilter.toLowerCase());
+        const matchesStatus = statusFilter === 'all' || rowText.includes(statusFilter.toLowerCase());
+        const matchesMerchant = merchantFilter === 'all' || rowText.includes(merchantFilter.toLowerCase());
+        rows[i].style.display = (matchesQuery && matchesType && matchesStatus && matchesMerchant) ? '' : 'none';
+      }
+    }
+
+    // ── Merchant Filter (dynamic, from real transaction data) ──
+    async function fetchMerchants() {
+      const select = document.getElementById('filter-merchant');
+      if (!select) return;
+      try {
+        const transactions = await api('/transactions');
+        const merchants = [...new Set(transactions.map(t => t.merchant).filter(Boolean))].sort();
+        select.innerHTML = `<option value="all">All Merchants (${merchants.length} active)</option>` +
+          merchants.map(m => `<option value="${m}">${m}</option>`).join('');
+      } catch (e) {
+        select.innerHTML = '<option value="all">All Merchants</option>';
+        console.error('Merchants fetch failed:', e);
+      }
+    }
+
+    // ── System Status (real backend health check) ──
+    async function checkSystemStatus() {
+      const textEl = document.getElementById('system-status-text');
+      const dotEl = document.getElementById('system-status-dot');
+      const pingEl = document.getElementById('system-status-ping');
+      if (!textEl) return;
+      try {
+        await api('/health');
+        textEl.textContent = 'System Status: Operational';
+        textEl.className = 'font-mono-data-sm text-mono-data-sm text-secondary tracking-tight';
+        if (dotEl) dotEl.className = 'relative inline-flex rounded-full h-2 w-2 bg-secondary';
+        if (pingEl) pingEl.className = 'animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75';
+      } catch (e) {
+        textEl.textContent = 'System Status: Backend Unavailable';
+        textEl.className = 'font-mono-data-sm text-mono-data-sm text-error tracking-tight';
+        if (dotEl) dotEl.className = 'relative inline-flex rounded-full h-2 w-2 bg-error';
+        if (pingEl) pingEl.className = 'animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75';
+      }
+    }
+
+    // ── Refresh All ──
+    async function refreshAll() {
+      await Promise.all([fetchDashboard(), fetchExceptions(), fetchAuditLogs(), fetchMerchants(), checkSystemStatus()]);
+      const syncedEl = document.getElementById('header-last-synced');
+      if (syncedEl) syncedEl.textContent = `Last synced: ${new Date().toLocaleTimeString()}`;
+    }
+
+    // ── Nav Tab Section Scrolling ──
+    function initNavScroll() {
+      const sectionTargets = {
+        transactions: 'section-exception-queue',
+        exceptions: 'section-exception-queue',
+        investigations: 'investigation-anchor',
+        'audit-trail': 'section-audit-trail'
+      };
+      document.querySelectorAll('nav a[data-path]').forEach(link => {
+        link.addEventListener('click', (e) => {
+          const targetId = sectionTargets[link.getAttribute('data-path')];
+          if (!targetId) return;
+          e.preventDefault();
+          const target = document.getElementById(targetId);
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+    }
+
+    // ── Boot ──
+    document.addEventListener('DOMContentLoaded', async () => {
+      initNavScroll();
+      const dateEl = document.getElementById('header-current-date');
+      if (dateEl) dateEl.textContent = new Date().toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+
+      try {
+        await refreshAll();
+      } catch (e) {
+        console.error('Initial load failed:', e);
+        document.querySelector('main').insertAdjacentHTML('afterbegin',
+          '<div class="w-full p-space-md bg-error-container/30 border border-error/50 rounded text-error text-center font-mono-data-sm">Backend unavailable at ' + API_BASE + ' — showing no data.</div>');
+      }
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-md shadow-[0_-1px_0_rgba(66,70,84,0.3)]"><div class="w-full px-space-lg flex flex-col md:flex-row items-center justify-between gap-space-sm"><div class="flex items-center gap-space-md"><span class="font-headline-sm text-headline-sm font-bold text-on-surface-variant tracking-wider uppercase text-[12px]">LEDGERGUARD AUDIT TRAIL</span><span class="font-mono-data-sm text-mono-data-sm text-outline">AI-Assisted Reconciliation — Demo Environment</span></div><div class="font-mono-data-sm text-mono-data-sm text-on-surface-variant">© 2025 LedgerGuard. Not connected to live banking rails.</div></div></footer></body></html>
